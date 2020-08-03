@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Dropdown } from 'semantic-ui-react';
 import { addClass, removeClass } from '../redux/classSlice';
 
@@ -13,6 +13,7 @@ const format = (str) => {
 
 export default function (props) {
   const dispatch = useDispatch();
+  const classes = useSelector(state => state.classes.classes);
 
   const onChange = (e) => {
     if (e.target.textContent) {
@@ -31,7 +32,6 @@ export default function (props) {
       )
     }
   }
-
   return (
     <> 
       <label>{props.option.title}</label>
@@ -40,6 +40,7 @@ export default function (props) {
         fluid
         multiple
         selection
+        value={classes.filter(el => props.option.classes.map(format).map(el => el.key).includes(el))}
         onChange={onChange}
         options={props.option.classes.map(format)}
       />
