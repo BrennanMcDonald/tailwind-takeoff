@@ -16,6 +16,7 @@ const MetadataDrawer = (props) => {
       }}
     >
       <Input
+        placeholder="Search..."
         style={{ width: "100%" }}
         value={search}
         onChange={(el) => setSearch(el.target.value)}

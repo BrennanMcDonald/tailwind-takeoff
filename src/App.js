@@ -30,15 +30,15 @@ function App() {
         <MetadataDrawer options={metadata} />
       </div>
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <div style={{ flex: 1 }}>
-          <root.span>
+        <div style={{ flex: 1, padding:"10px" }}>
+          <root.div style={{height:"100%"}}>
             <div
               ref={element}
               dangerouslySetInnerHTML={{ __html: innerHTML }}
               className={classes.map((el) => el.replace(".", "")).join(" ")}
             ></div>
             <style type="text/css">{css}</style>
-          </root.span>
+          </root.div>
         </div>
         <div style={{ flex: 1, display: "flex" }}>
           <TextArea
