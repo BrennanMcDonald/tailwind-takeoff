@@ -7,7 +7,7 @@ export const documentSlice = createSlice({
   },
   reducers: {
     updateHTML: (state, action) => {
-      console.log(action);
+      if (action.payload) state.html = action.payload.outerHTML;
     },
   },
 });

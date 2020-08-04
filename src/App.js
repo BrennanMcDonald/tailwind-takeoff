@@ -1,16 +1,29 @@
-import React, { useState, useRef } from "react";
-import { useSelector } from "react-redux";
-import metadata from "./metadata.json";
+import React, { useState, useRef, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { updateHTML } from "./redux/documentSlice";
+
+import root from "react-shadow";
+
 import MetadataDrawer from "./components/MetadataDrawer";
+
 import "semantic-ui-css/semantic.min.css";
 import { TextArea } from "semantic-ui-react";
-import root from "react-shadow";
+
 import css from "./tailwind.txt";
+import metadata from "./metadata.json";
 
 function App() {
+  const dispatch = useDispatch();
   const classes = useSelector((state) => state.classes.classes);
-  const [innerHTML, setInnerHTML] = useState("");
+  const documentHTML = useSelector((state) => state.document.html);
+  const [innerHTML, setInnerHTML] = useState("Content");
   const element = useRef();
+
+  useEffect(() => {
+    dispatch(updateHTML(element.current));
+    console.log(documentHTML);
+  });
+
   return (
     <div style={{ display: "flex" }}>
       <div style={{ height: "100vh" }}>
@@ -34,16 +47,28 @@ function App() {
             autocorrect="off"
             wrap="off"
             tabindex="0"
-            placeholder="Content"
+            style={{
+              outline: "currentcolor none medium",
+              flex: 1,
+              border: 0,
+              borderTop: "grey solid 1px",
+              borderRight: "grey solid 1px",
+            }}
+            value={innerHTML}
+            onChange={(el) => setInnerHTML(el.target.value)}
+          />
+          <div
             style={{
               outline: "currentcolor none medium",
               flex: 1,
               border: 0,
               borderTop: "grey solid 1px",
             }}
-            value={innerHTML}
-            onChange={(el) => setInnerHTML(el.target.value)}
-          />
+          >
+            Result:
+            <br />
+            {documentHTML}
+          </div>
         </div>
       </div>
     </div>
