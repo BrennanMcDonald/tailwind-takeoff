@@ -12,9 +12,11 @@ function App() {
   const [innerHTML, setInnerHTML] = useState("");
   return (
     <div style={{ display: "flex" }}>
-      <MetadataDrawer options={metadata} />
-      <div>
-        <Container style={{ height: "50vh" }}>
+      <div style={{ height: "100vh" }}>
+        <MetadataDrawer options={metadata} />
+      </div>
+      <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+        <div style={{ flex: 1 }}>
           <root.span>
             <div
               dangerouslySetInnerHTML={{ __html: innerHTML }}
@@ -22,10 +24,17 @@ function App() {
             ></div>
             <style type="text/css">{css}</style>
           </root.span>
-        </Container>
-        <div style={{ height: "50vh" }}>
+        </div>
+        <div style={{ flex: 1 }}>
           <TextArea
-            style={{ width: "100%", height: "100%" }}
+            autocapitalize="off"
+            spellcheck="off"
+            autocorrect="off"
+            wrap="off"
+            tabindex="0"
+            style={{
+              outline: "currentcolor none medium",
+            }}
             value={innerHTML}
             onChange={(el) => setInnerHTML(el.target.value)}
           />

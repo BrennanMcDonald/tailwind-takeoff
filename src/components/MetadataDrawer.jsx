@@ -9,26 +9,29 @@ export default function (props) {
     <div
       style={{
         width: "450px",
-        height: "100vh",
-        overflowX: "scroll",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <div style={{ position: "absolute", top: "0px", width: "100%" }}>
-        <div style={{ position: "fixed", width: "450px" }}>
-          <Input
-            style={{ width: "100%" }}
-            value={search}
-            onChange={(el) => setSearch(el.target.value)}
-          />
-        </div>
-      </div>
-      <Grid style={{ padding: "20px", marginTop: "35px" }}>
+      <Input
+        style={{ width: "100%" }}
+        value={search}
+        onChange={(el) => setSearch(el.target.value)}
+      />
+      <div
+        style={{
+          overflowY: "scroll",
+          padding: "20px",
+          flex: 1,
+        }}
+      >
         {props.options
           .filter((el) => el.title.toLowerCase().includes(search.toLowerCase()))
           .map((el) => {
             return <MetadataOption option={el} />;
           })}
-      </Grid>
+      </div>
     </div>
   );
 }
