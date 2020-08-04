@@ -1,1 +1,5 @@
-{"title":"Flex Wrap","classes":[".flex-no-wrap",".flex-wrap",".flex-wrap-reverse"],"documentationURL":"https://tailwindcss.com/docs/flex-wrap"}
+{
+  "title": "Flex Wrap",
+  "classes": [".flex-no-wrap", ".flex-wrap", ".flex-wrap-reverse"],
+  "documentationURL": "https://tailwindcss.com/docs/flex-wrap"
+}

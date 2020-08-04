@@ -1,1 +1,5 @@
-{"title":"Flex Shrink","classes":[".flex-shrink",".flex-shrink-0"],"documentationURL":"https://tailwindcss.com/docs/flex-shrink"}
+{
+  "title": "Flex Shrink",
+  "classes": [".flex-shrink", ".flex-shrink-0"],
+  "documentationURL": "https://tailwindcss.com/docs/flex-shrink"
+}

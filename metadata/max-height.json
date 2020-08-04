@@ -1,1 +1,5 @@
-{"title":"Max-Height","classes":[".max-h-full",".max-h-screen"],"documentationURL":"https://tailwindcss.com/docs/max-height"}
+{
+  "title": "Max-Height",
+  "classes": [".max-h-full", ".max-h-screen"],
+  "documentationURL": "https://tailwindcss.com/docs/max-height"
+}

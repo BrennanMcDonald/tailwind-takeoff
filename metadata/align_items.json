@@ -1,1 +1,11 @@
-{"title":"Align Items","classes":[".items-stretch",".items-start",".items-center",".items-end",".items-baseline"],"documentationURL":"https://tailwindcss.com/docs/align-items"}
+{
+  "title": "Align Items",
+  "classes": [
+    ".items-stretch",
+    ".items-start",
+    ".items-center",
+    ".items-end",
+    ".items-baseline"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/align-items"
+}

@@ -1,1 +1,5 @@
-{"title":"Text Decoration","classes":[".underline",".line-through",".no-underline"],"documentationURL":"https://tailwindcss.com/docs/text-decoration"}
+{
+  "title": "Text Decoration",
+  "classes": [".underline", ".line-through", ".no-underline"],
+  "documentationURL": "https://tailwindcss.com/docs/text-decoration"
+}

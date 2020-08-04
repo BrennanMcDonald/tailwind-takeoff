@@ -1,1 +1,5 @@
-{"title":"List Style Position","classes":[".list-inside",".list-outside"],"documentationURL":"https://tailwindcss.com/docs/list-style-position"}
+{
+  "title": "List Style Position",
+  "classes": [".list-inside", ".list-outside"],
+  "documentationURL": "https://tailwindcss.com/docs/list-style-position"
+}

@@ -1,1 +1,5 @@
-{"title":"Screen readers","classes":[".sr-only",".not-sr-only"],"documentationURL":"https://tailwindcss.com/docs/screen-readers"}
+{
+  "title": "Screen readers",
+  "classes": [".sr-only", ".not-sr-only"],
+  "documentationURL": "https://tailwindcss.com/docs/screen-readers"
+}

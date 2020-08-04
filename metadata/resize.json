@@ -1,1 +1,5 @@
-{"title":"Resize","classes":[".resize-none",".resize",".resize-y",".resize-x"],"documentationURL":"https://tailwindcss.com/docs/resize"}
+{
+  "title": "Resize",
+  "classes": [".resize-none", ".resize", ".resize-y", ".resize-x"],
+  "documentationURL": "https://tailwindcss.com/docs/resize"
+}

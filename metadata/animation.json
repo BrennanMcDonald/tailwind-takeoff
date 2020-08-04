@@ -1,1 +1,11 @@
-{"title":"Animation","classes":[".animate-none",".animate-spin",".animate-ping",".animate-pulse",".animate-bounce"],"documentationURL":"https://tailwindcss.com/docs/animation"}
+{
+  "title": "Animation",
+  "classes": [
+    ".animate-none",
+    ".animate-spin",
+    ".animate-ping",
+    ".animate-pulse",
+    ".animate-bounce"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/animation"
+}

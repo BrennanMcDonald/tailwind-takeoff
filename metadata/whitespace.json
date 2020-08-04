@@ -1,1 +1,11 @@
-{"title":"Whitespace","classes":[".whitespace-normal",".whitespace-no-wrap",".whitespace-pre",".whitespace-pre-line",".whitespace-pre-wrap"],"documentationURL":"https://tailwindcss.com/docs/whitespace"}
+{
+  "title": "Whitespace",
+  "classes": [
+    ".whitespace-normal",
+    ".whitespace-no-wrap",
+    ".whitespace-pre",
+    ".whitespace-pre-line",
+    ".whitespace-pre-wrap"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/whitespace"
+}

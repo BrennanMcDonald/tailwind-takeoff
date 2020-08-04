@@ -1,1 +1,11 @@
-{"title":"Text Opacity","classes":[".text-opacity-0",".text-opacity-25",".text-opacity-50",".text-opacity-75",".text-opacity-100"],"documentationURL":"https://tailwindcss.com/docs/text-opacity"}
+{
+  "title": "Text Opacity",
+  "classes": [
+    ".text-opacity-0",
+    ".text-opacity-25",
+    ".text-opacity-50",
+    ".text-opacity-75",
+    ".text-opacity-100"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/text-opacity"
+}

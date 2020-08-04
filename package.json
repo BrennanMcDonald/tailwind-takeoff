@@ -68,6 +68,7 @@
     "tailwindcss": "^1.6.2",
     "terser-webpack-plugin": "2.3.5",
     "ts-pnp": "1.1.6",
+    "typescript": "^3.9.7",
     "url-loader": "2.3.0",
     "webpack": "4.42.0",
     "webpack-dev-server": "3.10.3",
@@ -77,7 +78,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "prettier": "prettier --write .",
+    "lint": "eslint . --ext .js --ext .jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -148,5 +151,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

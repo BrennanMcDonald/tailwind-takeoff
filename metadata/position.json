@@ -1,1 +1,5 @@
-{"title":"Position","classes":[".static",".fixed",".absolute",".relative",".sticky"],"documentationURL":"https://tailwindcss.com/docs/position"}
+{
+  "title": "Position",
+  "classes": [".static", ".fixed", ".absolute", ".relative", ".sticky"],
+  "documentationURL": "https://tailwindcss.com/docs/position"
+}

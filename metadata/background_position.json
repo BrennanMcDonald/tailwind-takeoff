@@ -1,1 +1,15 @@
-{"title":"Background Position","classes":[".bg-bottom",".bg-center",".bg-left",".bg-left-bottom",".bg-left-top",".bg-right",".bg-right-bottom",".bg-right-top",".bg-top"],"documentationURL":"https://tailwindcss.com/docs/background-position"}
+{
+  "title": "Background Position",
+  "classes": [
+    ".bg-bottom",
+    ".bg-center",
+    ".bg-left",
+    ".bg-left-bottom",
+    ".bg-left-top",
+    ".bg-right",
+    ".bg-right-bottom",
+    ".bg-right-top",
+    ".bg-top"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/background-position"
+}

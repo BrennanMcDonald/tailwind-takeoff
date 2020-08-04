@@ -1,1 +1,11 @@
-{"title":"Opacity","classes":[".opacity-100",".opacity-75",".opacity-50",".opacity-25",".opacity-0"],"documentationURL":"https://tailwindcss.com/docs/opacity"}
+{
+  "title": "Opacity",
+  "classes": [
+    ".opacity-100",
+    ".opacity-75",
+    ".opacity-50",
+    ".opacity-25",
+    ".opacity-0"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/opacity"
+}

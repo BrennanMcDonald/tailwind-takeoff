@@ -1,1 +1,5 @@
-{"title":"Space Between","classes":[],"documentationURL":"https://tailwindcss.com/docs/space"}
+{
+  "title": "Space Between",
+  "classes": [".space-x-0"],
+  "documentationURL": "https://tailwindcss.com/docs/space"
+}

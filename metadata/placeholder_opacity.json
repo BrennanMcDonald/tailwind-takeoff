@@ -1,1 +1,11 @@
-{"title":"Placeholder Opacity","classes":[".placeholder-opacity-0",".placeholder-opacity-25",".placeholder-opacity-50",".placeholder-opacity-75",".placeholder-opacity-100"],"documentationURL":"https://tailwindcss.com/docs/placeholder-opacity"}
+{
+  "title": "Placeholder Opacity",
+  "classes": [
+    ".placeholder-opacity-0",
+    ".placeholder-opacity-25",
+    ".placeholder-opacity-50",
+    ".placeholder-opacity-75",
+    ".placeholder-opacity-100"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/placeholder-opacity"
+}

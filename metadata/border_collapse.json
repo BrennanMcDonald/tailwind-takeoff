@@ -1,1 +1,5 @@
-{"title":"Border Collapse","classes":[".border-collapse",".border-separate"],"documentationURL":"https://tailwindcss.com/docs/border-collapse"}
+{
+  "title": "Border Collapse",
+  "classes": [".border-collapse", ".border-separate"],
+  "documentationURL": "https://tailwindcss.com/docs/border-collapse"
+}

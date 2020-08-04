@@ -1,1 +1,5 @@
-{"title":"Appearance","classes":[".appearance-none"],"documentationURL":"https://tailwindcss.com/docs/appearance"}
+{
+  "title": "Appearance",
+  "classes": [".appearance-none"],
+  "documentationURL": "https://tailwindcss.com/docs/appearance"
+}

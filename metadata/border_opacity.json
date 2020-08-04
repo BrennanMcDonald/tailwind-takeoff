@@ -1,1 +1,11 @@
-{"title":"Border Opacity","classes":[".border-opacity-0",".border-opacity-25",".border-opacity-50",".border-opacity-75",".border-opacity-100"],"documentationURL":"https://tailwindcss.com/docs/border-opacity"}
+{
+  "title": "Border Opacity",
+  "classes": [
+    ".border-opacity-0",
+    ".border-opacity-25",
+    ".border-opacity-50",
+    ".border-opacity-75",
+    ".border-opacity-100"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/border-opacity"
+}

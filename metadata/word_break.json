@@ -1,1 +1,5 @@
-{"title":"Word Break","classes":[".break-normal",".break-words",".break-all",".truncate"],"documentationURL":"https://tailwindcss.com/docs/word-break"}
+{
+  "title": "Word Break",
+  "classes": [".break-normal", ".break-words", ".break-all", ".truncate"],
+  "documentationURL": "https://tailwindcss.com/docs/word-break"
+}

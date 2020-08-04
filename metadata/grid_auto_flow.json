@@ -1,1 +1,10 @@
-{"title":"Grid Auto Flow","classes":[".grid-flow-row",".grid-flow-col",".grid-flow-row-dense",".grid-flow-col-dense"],"documentationURL":"https://tailwindcss.com/docs/grid-auto-flow"}
+{
+  "title": "Grid Auto Flow",
+  "classes": [
+    ".grid-flow-row",
+    ".grid-flow-col",
+    ".grid-flow-row-dense",
+    ".grid-flow-col-dense"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/grid-auto-flow"
+}

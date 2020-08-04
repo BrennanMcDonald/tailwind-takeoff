@@ -1,1 +1,10 @@
-{"title":"Flex Direction","classes":[".flex-row",".flex-row-reverse",".flex-col",".flex-col-reverse"],"documentationURL":"https://tailwindcss.com/docs/flex-direction"}
+{
+  "title": "Flex Direction",
+  "classes": [
+    ".flex-row",
+    ".flex-row-reverse",
+    ".flex-col",
+    ".flex-col-reverse"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/flex-direction"
+}

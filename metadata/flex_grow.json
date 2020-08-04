@@ -1,1 +1,5 @@
-{"title":"Flex Grow","classes":[".flex-grow",".flex-grow-0"],"documentationURL":"https://tailwindcss.com/docs/flex-grow"}
+{
+  "title": "Flex Grow",
+  "classes": [".flex-grow", ".flex-grow-0"],
+  "documentationURL": "https://tailwindcss.com/docs/flex-grow"
+}

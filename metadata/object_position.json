@@ -1,1 +1,15 @@
-{"title":"Object Position","classes":[".object-bottom",".object-center",".object-left",".object-left-bottom",".object-left-top",".object-right",".object-right-bottom",".object-right-top",".object-top"],"documentationURL":"https://tailwindcss.com/docs/object-position"}
+{
+  "title": "Object Position",
+  "classes": [
+    ".object-bottom",
+    ".object-center",
+    ".object-left",
+    ".object-left-bottom",
+    ".object-left-top",
+    ".object-right",
+    ".object-right-bottom",
+    ".object-right-top",
+    ".object-top"
+  ],
+  "documentationURL": "https://tailwindcss.com/docs/object-position"
+}

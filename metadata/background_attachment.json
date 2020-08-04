@@ -1,1 +1,5 @@
-{"title":"Background Attachment","classes":[".bg-fixed",".bg-local",".bg-scroll"],"documentationURL":"https://tailwindcss.com/docs/background-attachment"}
+{
+  "title": "Background Attachment",
+  "classes": [".bg-fixed", ".bg-local", ".bg-scroll"],
+  "documentationURL": "https://tailwindcss.com/docs/background-attachment"
+}

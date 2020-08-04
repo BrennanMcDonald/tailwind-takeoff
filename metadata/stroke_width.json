@@ -1,1 +1,5 @@
-{"title":"Stroke Width","classes":[".stroke-0",".stroke-1",".stroke-2"],"documentationURL":"https://tailwindcss.com/docs/stroke-width"}
+{
+  "title": "Stroke Width",
+  "classes": [".stroke-0", ".stroke-1", ".stroke-2"],
+  "documentationURL": "https://tailwindcss.com/docs/stroke-width"
+}

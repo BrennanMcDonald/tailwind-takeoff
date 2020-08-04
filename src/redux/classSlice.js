@@ -1,20 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 export const classSlice = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState: {
-    classes: []
+    classes: [],
   },
   reducers: {
     addClass: (state, action) => {
-      state.classes.push(action.payload.class)
+      state.classes.push(action.payload.class);
     },
     removeClass: (state, action) => {
-      state.classes = state.classes.filter(el => el !== action.payload.class)
+      state.classes = state.classes.filter((el) => el !== action.payload.class);
     },
-  }
+  },
 });
 
-export const { removeClass, addClass } = classSlice.actions
+export const { removeClass, addClass } = classSlice.actions;
 
-export default classSlice.reducer
+export default classSlice.reducer;

@@ -1,1 +1,5 @@
-{"title":"Outline","classes":[".outline-none"],"documentationURL":"https://tailwindcss.com/docs/outline"}
+{
+  "title": "Outline",
+  "classes": [".outline-none"],
+  "documentationURL": "https://tailwindcss.com/docs/outline"
+}

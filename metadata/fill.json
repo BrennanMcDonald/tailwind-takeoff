@@ -1,1 +1,5 @@
-{"title":"Fill","classes":[".fill-current"],"documentationURL":"https://tailwindcss.com/docs/fill"}
+{
+  "title": "Fill",
+  "classes": [".fill-current"],
+  "documentationURL": "https://tailwindcss.com/docs/fill"
+}

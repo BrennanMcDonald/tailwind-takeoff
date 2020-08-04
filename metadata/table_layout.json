@@ -1,1 +1,5 @@
-{"title":"Table Layout","classes":[".table-auto",".table-fixed"],"documentationURL":"https://tailwindcss.com/docs/table-layout"}
+{
+  "title": "Table Layout",
+  "classes": [".table-auto", ".table-fixed"],
+  "documentationURL": "https://tailwindcss.com/docs/table-layout"
+}
