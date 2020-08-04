@@ -1,8 +1,17 @@
-# Takeoff
-
-<div>An easy to use tailwind playground and development environment for creating responsive components in tailwindCSS.</div>
-
-<div><br></div>
-
-<div><br></div>
-
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": "error"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": ["build/*", "metadata/*", "scripts/*", "config/*"]
+}
