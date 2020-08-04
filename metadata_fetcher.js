@@ -15,7 +15,7 @@ const scraper = function (URL) {
       var tableParser = parser.parseFromString(table.outerHTML, "text/html");
       var classes = tableParser
         .getElementsByTagName("tr")
-        .map((el) => el.childNodes[1].textContent)
+        .map((el) => el.childNodes[1].textContent.match(/.(.*)/g)[0].trim())
         .filter((el) => el.startsWith("."));
       var resultJSON = {
         title,

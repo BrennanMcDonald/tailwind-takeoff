@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { Dropdown, Grid } from "semantic-ui-react";
 import { addClass, removeClass } from "../redux/classSlice";
@@ -11,7 +12,7 @@ const format = (str) => {
   };
 };
 
-export default function (props) {
+const MetadataOption = (props) => {
   const dispatch = useDispatch();
   const classes = useSelector((state) => state.classes.classes);
 
@@ -60,4 +61,13 @@ export default function (props) {
       </Grid>
     </>
   );
-}
+};
+
+MetadataOption.propTypes = {
+  option: {
+    title: PropTypes.string,
+    classes: PropTypes.arrayOf(PropTypes.string),
+  },
+};
+
+export default MetadataOption;

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Grid, Input } from "semantic-ui-react";
+import PropTypes from "prop-types";
+import { Input } from "semantic-ui-react";
 import MetadataOption from "./MetadataOption";
 
-export default function (props) {
+const MetadataDrawer = (props) => {
   const [search, setSearch] = useState("");
 
   return (
@@ -29,9 +30,20 @@ export default function (props) {
         {props.options
           .filter((el) => el.title.toLowerCase().includes(search.toLowerCase()))
           .map((el) => {
-            return <MetadataOption option={el} />;
+            return <MetadataOption key={el.title} option={el} />;
           })}
       </div>
     </div>
   );
-}
+};
+
+MetadataDrawer.propTypes = {
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      classes: PropTypes.arrayOf(PropTypes.string),
+    })
+  ),
+};
+
+export default MetadataDrawer;

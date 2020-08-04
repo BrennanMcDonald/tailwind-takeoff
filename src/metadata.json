@@ -22,6 +22,17 @@
     "documentationURL": "https://tailwindcss.com/docs/align-items"
   },
   {
+    "title": "Animation",
+    "classes": [
+      ".animate-none",
+      ".animate-spin",
+      ".animate-ping",
+      ".animate-pulse",
+      ".animate-bounce"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/animation"
+  },
+  {
     "title": "Align Self",
     "classes": [
       ".self-auto",
@@ -33,15 +44,9 @@
     "documentationURL": "https://tailwindcss.com/docs/align-self"
   },
   {
-    "title": "Animation",
-    "classes": [
-      ".animate-none",
-      ".animate-spin",
-      ".animate-ping",
-      ".animate-pulse",
-      ".animate-bounce"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/animation"
+    "title": "Appearance",
+    "classes": [".appearance-none"],
+    "documentationURL": "https://tailwindcss.com/docs/appearance"
   },
   {
     "title": "Background Attachment",
@@ -149,6 +154,21 @@
     "documentationURL": "https://tailwindcss.com/docs/background-color"
   },
   {
+    "title": "Background Position",
+    "classes": [
+      ".bg-bottom",
+      ".bg-center",
+      ".bg-left",
+      ".bg-left-bottom",
+      ".bg-left-top",
+      ".bg-right",
+      ".bg-right-bottom",
+      ".bg-right-top",
+      ".bg-top"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/background-position"
+  },
+  {
     "title": "Background Opacity",
     "classes": [
       ".bg-opacity-0",
@@ -180,77 +200,6 @@
     "title": "Border Collapse",
     "classes": [".border-collapse", ".border-separate"],
     "documentationURL": "https://tailwindcss.com/docs/border-collapse"
-  },
-  {
-    "title": "Border Opacity",
-    "classes": [
-      ".border-opacity-0",
-      ".border-opacity-25",
-      ".border-opacity-50",
-      ".border-opacity-75",
-      ".border-opacity-100"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/border-opacity"
-  },
-  {
-    "title": "Border Radius",
-    "classes": [
-      ".rounded-none",
-      ".rounded-sm",
-      ".rounded",
-      ".rounded-md",
-      ".rounded-lg",
-      ".rounded-full",
-      ".rounded-t-none",
-      ".rounded-r-none",
-      ".rounded-b-none",
-      ".rounded-l-none",
-      ".rounded-t-sm",
-      ".rounded-r-sm",
-      ".rounded-b-sm",
-      ".rounded-l-sm",
-      ".rounded-t",
-      ".rounded-r",
-      ".rounded-b",
-      ".rounded-l",
-      ".rounded-t-md",
-      ".rounded-r-md",
-      ".rounded-b-md",
-      ".rounded-l-md",
-      ".rounded-t-lg",
-      ".rounded-r-lg",
-      ".rounded-b-lg",
-      ".rounded-l-lg",
-      ".rounded-t-full",
-      ".rounded-r-full",
-      ".rounded-b-full",
-      ".rounded-l-full",
-      ".rounded-tl-none",
-      ".rounded-tr-none",
-      ".rounded-br-none",
-      ".rounded-bl-none",
-      ".rounded-tl-sm",
-      ".rounded-tr-sm",
-      ".rounded-br-sm",
-      ".rounded-bl-sm",
-      ".rounded-tl",
-      ".rounded-tr",
-      ".rounded-br",
-      ".rounded-bl",
-      ".rounded-tl-md",
-      ".rounded-tr-md",
-      ".rounded-br-md",
-      ".rounded-bl-md",
-      ".rounded-tl-lg",
-      ".rounded-tr-lg",
-      ".rounded-br-lg",
-      ".rounded-bl-lg",
-      ".rounded-tl-full",
-      ".rounded-tr-full",
-      ".rounded-br-full",
-      ".rounded-bl-full"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/border-radius"
   },
   {
     "title": "Border Color",
@@ -353,31 +302,75 @@
     "documentationURL": "https://tailwindcss.com/docs/border-color"
   },
   {
-    "title": "Border Style",
+    "title": "Border Opacity",
     "classes": [
-      ".border-solid",
-      ".border-dashed",
-      ".border-dotted",
-      ".border-double",
-      ".border-none"
+      ".border-opacity-0",
+      ".border-opacity-25",
+      ".border-opacity-50",
+      ".border-opacity-75",
+      ".border-opacity-100"
     ],
-    "documentationURL": "https://tailwindcss.com/docs/border-style"
+    "documentationURL": "https://tailwindcss.com/docs/border-opacity"
   },
   {
-    "title": "Box Shadow",
+    "title": "Border Radius",
     "classes": [
-      ".shadow-xs",
-      ".shadow-sm",
-      ".shadow",
-      ".shadow-md",
-      ".shadow-lg",
-      ".shadow-xl",
-      ".shadow-2xl",
-      ".shadow-inner",
-      ".shadow-outline",
-      ".shadow-none"
+      ".rounded-none",
+      ".rounded-sm",
+      ".rounded",
+      ".rounded-md",
+      ".rounded-lg",
+      ".rounded-full",
+      ".rounded-t-none",
+      ".rounded-r-none",
+      ".rounded-b-none",
+      ".rounded-l-none",
+      ".rounded-t-sm",
+      ".rounded-r-sm",
+      ".rounded-b-sm",
+      ".rounded-l-sm",
+      ".rounded-t",
+      ".rounded-r",
+      ".rounded-b",
+      ".rounded-l",
+      ".rounded-t-md",
+      ".rounded-r-md",
+      ".rounded-b-md",
+      ".rounded-l-md",
+      ".rounded-t-lg",
+      ".rounded-r-lg",
+      ".rounded-b-lg",
+      ".rounded-l-lg",
+      ".rounded-t-full",
+      ".rounded-r-full",
+      ".rounded-b-full",
+      ".rounded-l-full",
+      ".rounded-tl-none",
+      ".rounded-tr-none",
+      ".rounded-br-none",
+      ".rounded-bl-none",
+      ".rounded-tl-sm",
+      ".rounded-tr-sm",
+      ".rounded-br-sm",
+      ".rounded-bl-sm",
+      ".rounded-tl",
+      ".rounded-tr",
+      ".rounded-br",
+      ".rounded-bl",
+      ".rounded-tl-md",
+      ".rounded-tr-md",
+      ".rounded-br-md",
+      ".rounded-bl-md",
+      ".rounded-tl-lg",
+      ".rounded-tr-lg",
+      ".rounded-br-lg",
+      ".rounded-bl-lg",
+      ".rounded-tl-full",
+      ".rounded-tr-full",
+      ".rounded-br-full",
+      ".rounded-bl-full"
     ],
-    "documentationURL": "https://tailwindcss.com/docs/box-shadow"
+    "documentationURL": "https://tailwindcss.com/docs/border-radius"
   },
   {
     "title": "Border Width",
@@ -411,6 +404,33 @@
     "documentationURL": "https://tailwindcss.com/docs/border-width"
   },
   {
+    "title": "Border Style",
+    "classes": [
+      ".border-solid",
+      ".border-dashed",
+      ".border-dotted",
+      ".border-double",
+      ".border-none"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/border-style"
+  },
+  {
+    "title": "Box Shadow",
+    "classes": [
+      ".shadow-xs",
+      ".shadow-sm",
+      ".shadow",
+      ".shadow-md",
+      ".shadow-lg",
+      ".shadow-xl",
+      ".shadow-2xl",
+      ".shadow-inner",
+      ".shadow-outline",
+      ".shadow-none"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/box-shadow"
+  },
+  {
     "title": "Box Sizing",
     "classes": [".box-border", ".box-content"],
     "documentationURL": "https://tailwindcss.com/docs/box-sizing"
@@ -424,21 +444,6 @@
     "title": "Container",
     "classes": [".container"],
     "documentationURL": "https://tailwindcss.com/docs/container"
-  },
-  {
-    "title": "Background Position",
-    "classes": [
-      ".bg-bottom",
-      ".bg-center",
-      ".bg-left",
-      ".bg-left-bottom",
-      ".bg-left-top",
-      ".bg-right",
-      ".bg-right-bottom",
-      ".bg-right-top",
-      ".bg-top"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/background-position"
   },
   {
     "title": "Cursor",
@@ -478,6 +483,11 @@
     "documentationURL": "https://tailwindcss.com/docs/display"
   },
   {
+    "title": "Fill",
+    "classes": [".fill-current"],
+    "documentationURL": "https://tailwindcss.com/docs/fill"
+  },
+  {
     "title": "Flex Direction",
     "classes": [
       ".flex-row",
@@ -493,9 +503,14 @@
     "documentationURL": "https://tailwindcss.com/docs/flex-grow"
   },
   {
-    "title": "Fill",
-    "classes": [".fill-current"],
-    "documentationURL": "https://tailwindcss.com/docs/fill"
+    "title": "Flex Wrap",
+    "classes": [".flex-no-wrap", ".flex-wrap", ".flex-wrap-reverse"],
+    "documentationURL": "https://tailwindcss.com/docs/flex-wrap"
+  },
+  {
+    "title": "Flex",
+    "classes": [".flex-initial", ".flex-1", ".flex-auto", ".flex-none"],
+    "documentationURL": "https://tailwindcss.com/docs/flex"
   },
   {
     "title": "Flex Shrink",
@@ -503,29 +518,14 @@
     "documentationURL": "https://tailwindcss.com/docs/flex-shrink"
   },
   {
-    "title": "Flex Wrap",
-    "classes": [".flex-no-wrap", ".flex-wrap", ".flex-wrap-reverse"],
-    "documentationURL": "https://tailwindcss.com/docs/flex-wrap"
-  },
-  {
-    "title": "Floats",
-    "classes": [".float-right", ".float-left", ".float-none", ".clearfix"],
-    "documentationURL": "https://tailwindcss.com/docs/float"
-  },
-  {
     "title": "Font Family",
     "classes": [".font-sans", ".font-serif", ".font-mono"],
     "documentationURL": "https://tailwindcss.com/docs/font-family"
   },
   {
-    "title": "Appearance",
-    "classes": [".appearance-none"],
-    "documentationURL": "https://tailwindcss.com/docs/appearance"
-  },
-  {
-    "title": "Flex",
-    "classes": [".flex-initial", ".flex-1", ".flex-auto", ".flex-none"],
-    "documentationURL": "https://tailwindcss.com/docs/flex"
+    "title": "Floats",
+    "classes": [".float-right", ".float-left", ".float-none", ".clearfix"],
+    "documentationURL": "https://tailwindcss.com/docs/float"
   },
   {
     "title": "Font Size",
@@ -547,6 +547,31 @@
     "title": "Font Smoothing",
     "classes": [".antialiased", ".subpixel-antialiased"],
     "documentationURL": "https://tailwindcss.com/docs/font-smoothing"
+  },
+  {
+    "title": "Font Weight",
+    "classes": [
+      ".font-hairline",
+      ".font-thin",
+      ".font-light",
+      ".font-normal",
+      ".font-medium",
+      ".font-semibold",
+      ".font-bold",
+      ".font-extrabold",
+      ".font-black"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/font-weight"
+  },
+  {
+    "title": "Grid Auto Flow",
+    "classes": [
+      ".grid-flow-row",
+      ".grid-flow-col",
+      ".grid-flow-row-dense",
+      ".grid-flow-col-dense"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/grid-auto-flow"
   },
   {
     "title": "Font Style",
@@ -617,16 +642,6 @@
     "documentationURL": "https://tailwindcss.com/docs/gap"
   },
   {
-    "title": "Grid Auto Flow",
-    "classes": [
-      ".grid-flow-row",
-      ".grid-flow-col",
-      ".grid-flow-row-dense",
-      ".grid-flow-col-dense"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/grid-auto-flow"
-  },
-  {
     "title": "Grid Column Start / End",
     "classes": [
       ".col-auto",
@@ -674,6 +689,25 @@
     "documentationURL": "https://tailwindcss.com/docs/grid-column"
   },
   {
+    "title": "Grid Template Columns",
+    "classes": [
+      ".grid-cols-1",
+      ".grid-cols-2",
+      ".grid-cols-3",
+      ".grid-cols-4",
+      ".grid-cols-5",
+      ".grid-cols-6",
+      ".grid-cols-7",
+      ".grid-cols-8",
+      ".grid-cols-9",
+      ".grid-cols-10",
+      ".grid-cols-11",
+      ".grid-cols-12",
+      ".grid-cols-none"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/grid-template-columns"
+  },
+  {
     "title": "Grid Row Start / End",
     "classes": [
       ".row-auto",
@@ -701,25 +735,6 @@
       ".row-end-auto"
     ],
     "documentationURL": "https://tailwindcss.com/docs/grid-row"
-  },
-  {
-    "title": "Grid Template Columns",
-    "classes": [
-      ".grid-cols-1",
-      ".grid-cols-2",
-      ".grid-cols-3",
-      ".grid-cols-4",
-      ".grid-cols-5",
-      ".grid-cols-6",
-      ".grid-cols-7",
-      ".grid-cols-8",
-      ".grid-cols-9",
-      ".grid-cols-10",
-      ".grid-cols-11",
-      ".grid-cols-12",
-      ".grid-cols-none"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/grid-template-columns"
   },
   {
     "title": "Grid Template Rows",
@@ -807,21 +822,6 @@
     "documentationURL": "https://tailwindcss.com/docs/line-height"
   },
   {
-    "title": "Font Weight",
-    "classes": [
-      ".font-hairline",
-      ".font-thin",
-      ".font-light",
-      ".font-normal",
-      ".font-medium",
-      ".font-semibold",
-      ".font-bold",
-      ".font-extrabold",
-      ".font-black"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/font-weight"
-  },
-  {
     "title": "List Style Position",
     "classes": [".list-inside", ".list-outside"],
     "documentationURL": "https://tailwindcss.com/docs/list-style-position"
@@ -830,6 +830,224 @@
     "title": "List Style Type",
     "classes": [".list-none", ".list-disc", ".list-decimal"],
     "documentationURL": "https://tailwindcss.com/docs/list-style-type"
+  },
+  {
+    "title": "Max-Height",
+    "classes": [".max-h-full", ".max-h-screen"],
+    "documentationURL": "https://tailwindcss.com/docs/max-height"
+  },
+  {
+    "title": "Min-Height",
+    "classes": [".min-h-0", ".min-h-full", ".min-h-screen"],
+    "documentationURL": "https://tailwindcss.com/docs/min-height"
+  },
+  {
+    "title": "Max-Width",
+    "classes": [
+      ".max-w-xs",
+      ".max-w-sm",
+      ".max-w-md",
+      ".max-w-lg",
+      ".max-w-xl",
+      ".max-w-2xl",
+      ".max-w-3xl",
+      ".max-w-4xl",
+      ".max-w-5xl",
+      ".max-w-6xl",
+      ".max-w-full",
+      ".max-w-screen-sm",
+      ".max-w-screen-md",
+      ".max-w-screen-lg",
+      ".max-w-screen-xl",
+      ".max-w-none"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/max-width"
+  },
+  {
+    "title": "Min-Width",
+    "classes": [".min-w-0", ".min-w-full"],
+    "documentationURL": "https://tailwindcss.com/docs/min-width"
+  },
+  {
+    "title": "Object Fit",
+    "classes": [
+      ".object-contain",
+      ".object-cover",
+      ".object-fill",
+      ".object-none",
+      ".object-scale-down"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/object-fit"
+  },
+  {
+    "title": "Object Position",
+    "classes": [
+      ".object-bottom",
+      ".object-center",
+      ".object-left",
+      ".object-left-bottom",
+      ".object-left-top",
+      ".object-right",
+      ".object-right-bottom",
+      ".object-right-top",
+      ".object-top"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/object-position"
+  },
+  {
+    "title": "Opacity",
+    "classes": [
+      ".opacity-100",
+      ".opacity-75",
+      ".opacity-50",
+      ".opacity-25",
+      ".opacity-0"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/opacity"
+  },
+  {
+    "title": "Outline",
+    "classes": [".outline-none"],
+    "documentationURL": "https://tailwindcss.com/docs/outline"
+  },
+  {
+    "title": "Padding",
+    "classes": [
+      ".p-0",
+      ".p-1",
+      ".p-2",
+      ".p-3",
+      ".p-4",
+      ".p-5",
+      ".p-6",
+      ".p-8",
+      ".p-10",
+      ".p-12",
+      ".p-16",
+      ".p-20",
+      ".p-24",
+      ".p-32",
+      ".p-40",
+      ".p-48",
+      ".p-56",
+      ".p-64",
+      ".p-px",
+      ".py-0",
+      ".py-1",
+      ".py-2",
+      ".py-3",
+      ".py-4",
+      ".py-5",
+      ".py-6",
+      ".py-8",
+      ".py-10",
+      ".py-12",
+      ".py-16",
+      ".py-20",
+      ".py-24",
+      ".py-32",
+      ".py-40",
+      ".py-48",
+      ".py-56",
+      ".py-64",
+      ".py-px",
+      ".px-0",
+      ".px-1",
+      ".px-2",
+      ".px-3",
+      ".px-4",
+      ".px-5",
+      ".px-6",
+      ".px-8",
+      ".px-10",
+      ".px-12",
+      ".px-16",
+      ".px-20",
+      ".px-24",
+      ".px-32",
+      ".px-40",
+      ".px-48",
+      ".px-56",
+      ".px-64",
+      ".px-px",
+      ".pt-0",
+      ".pt-1",
+      ".pt-2",
+      ".pt-3",
+      ".pt-4",
+      ".pt-5",
+      ".pt-6",
+      ".pt-8",
+      ".pt-10",
+      ".pt-12",
+      ".pt-16",
+      ".pt-20",
+      ".pt-24",
+      ".pt-32",
+      ".pt-40",
+      ".pt-48",
+      ".pt-56",
+      ".pt-64",
+      ".pt-px",
+      ".pr-0",
+      ".pr-1",
+      ".pr-2",
+      ".pr-3",
+      ".pr-4",
+      ".pr-5",
+      ".pr-6",
+      ".pr-8",
+      ".pr-10",
+      ".pr-12",
+      ".pr-16",
+      ".pr-20",
+      ".pr-24",
+      ".pr-32",
+      ".pr-40",
+      ".pr-48",
+      ".pr-56",
+      ".pr-64",
+      ".pr-px",
+      ".pb-0",
+      ".pb-1",
+      ".pb-2",
+      ".pb-3",
+      ".pb-4",
+      ".pb-5",
+      ".pb-6",
+      ".pb-8",
+      ".pb-10",
+      ".pb-12",
+      ".pb-16",
+      ".pb-20",
+      ".pb-24",
+      ".pb-32",
+      ".pb-40",
+      ".pb-48",
+      ".pb-56",
+      ".pb-64",
+      ".pb-px",
+      ".pl-0",
+      ".pl-1",
+      ".pl-2",
+      ".pl-3",
+      ".pl-4",
+      ".pl-5",
+      ".pl-6",
+      ".pl-8",
+      ".pl-10",
+      ".pl-12",
+      ".pl-16",
+      ".pl-20",
+      ".pl-24",
+      ".pl-32",
+      ".pl-40",
+      ".pl-48",
+      ".pl-56",
+      ".pl-64",
+      ".pl-px"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/padding"
   },
   {
     "title": "Margin",
@@ -1104,58 +1322,130 @@
     "documentationURL": "https://tailwindcss.com/docs/margin"
   },
   {
-    "title": "Min-Width",
-    "classes": [".min-w-0", ".min-w-full"],
-    "documentationURL": "https://tailwindcss.com/docs/min-width"
-  },
-  {
-    "title": "Min-Height",
-    "classes": [".min-h-0", ".min-h-full", ".min-h-screen"],
-    "documentationURL": "https://tailwindcss.com/docs/min-height"
-  },
-  {
-    "title": "Object Fit",
+    "title": "Placeholder Opacity",
     "classes": [
-      ".object-contain",
-      ".object-cover",
-      ".object-fill",
-      ".object-none",
-      ".object-scale-down"
+      ".placeholder-opacity-0",
+      ".placeholder-opacity-25",
+      ".placeholder-opacity-50",
+      ".placeholder-opacity-75",
+      ".placeholder-opacity-100"
     ],
-    "documentationURL": "https://tailwindcss.com/docs/object-fit"
+    "documentationURL": "https://tailwindcss.com/docs/placeholder-opacity"
   },
   {
-    "title": "Opacity",
+    "title": "Placeholder Color",
     "classes": [
-      ".opacity-100",
-      ".opacity-75",
-      ".opacity-50",
-      ".opacity-25",
-      ".opacity-0"
+      ".placeholder-transparent",
+      ".placeholder-current",
+      ".placeholder-black",
+      ".placeholder-white",
+      ".placeholder-gray-100",
+      ".placeholder-gray-200",
+      ".placeholder-gray-300",
+      ".placeholder-gray-400",
+      ".placeholder-gray-500",
+      ".placeholder-gray-600",
+      ".placeholder-gray-700",
+      ".placeholder-gray-800",
+      ".placeholder-gray-900",
+      ".placeholder-red-100",
+      ".placeholder-red-200",
+      ".placeholder-red-300",
+      ".placeholder-red-400",
+      ".placeholder-red-500",
+      ".placeholder-red-600",
+      ".placeholder-red-700",
+      ".placeholder-red-800",
+      ".placeholder-red-900",
+      ".placeholder-orange-100",
+      ".placeholder-orange-200",
+      ".placeholder-orange-300",
+      ".placeholder-orange-400",
+      ".placeholder-orange-500",
+      ".placeholder-orange-600",
+      ".placeholder-orange-700",
+      ".placeholder-orange-800",
+      ".placeholder-orange-900",
+      ".placeholder-yellow-100",
+      ".placeholder-yellow-200",
+      ".placeholder-yellow-300",
+      ".placeholder-yellow-400",
+      ".placeholder-yellow-500",
+      ".placeholder-yellow-600",
+      ".placeholder-yellow-700",
+      ".placeholder-yellow-800",
+      ".placeholder-yellow-900",
+      ".placeholder-green-100",
+      ".placeholder-green-200",
+      ".placeholder-green-300",
+      ".placeholder-green-400",
+      ".placeholder-green-500",
+      ".placeholder-green-600",
+      ".placeholder-green-700",
+      ".placeholder-green-800",
+      ".placeholder-green-900",
+      ".placeholder-teal-100",
+      ".placeholder-teal-200",
+      ".placeholder-teal-300",
+      ".placeholder-teal-400",
+      ".placeholder-teal-500",
+      ".placeholder-teal-600",
+      ".placeholder-teal-700",
+      ".placeholder-teal-800",
+      ".placeholder-teal-900",
+      ".placeholder-blue-100",
+      ".placeholder-blue-200",
+      ".placeholder-blue-300",
+      ".placeholder-blue-400",
+      ".placeholder-blue-500",
+      ".placeholder-blue-600",
+      ".placeholder-blue-700",
+      ".placeholder-blue-800",
+      ".placeholder-blue-900",
+      ".placeholder-indigo-100",
+      ".placeholder-indigo-200",
+      ".placeholder-indigo-300",
+      ".placeholder-indigo-400",
+      ".placeholder-indigo-500",
+      ".placeholder-indigo-600",
+      ".placeholder-indigo-700",
+      ".placeholder-indigo-800",
+      ".placeholder-indigo-900",
+      ".placeholder-purple-100",
+      ".placeholder-purple-200",
+      ".placeholder-purple-300",
+      ".placeholder-purple-400",
+      ".placeholder-purple-500",
+      ".placeholder-purple-600",
+      ".placeholder-purple-700",
+      ".placeholder-purple-800",
+      ".placeholder-purple-900",
+      ".placeholder-pink-100",
+      ".placeholder-pink-200",
+      ".placeholder-pink-300",
+      ".placeholder-pink-400",
+      ".placeholder-pink-500",
+      ".placeholder-pink-600",
+      ".placeholder-pink-700",
+      ".placeholder-pink-800",
+      ".placeholder-pink-900"
     ],
-    "documentationURL": "https://tailwindcss.com/docs/opacity"
+    "documentationURL": "https://tailwindcss.com/docs/placeholder-color"
   },
   {
-    "title": "Max-Width",
-    "classes": [
-      ".max-w-xs",
-      ".max-w-sm",
-      ".max-w-md",
-      ".max-w-lg",
-      ".max-w-xl",
-      ".max-w-2xl",
-      ".max-w-3xl",
-      ".max-w-4xl",
-      ".max-w-5xl",
-      ".max-w-6xl",
-      ".max-w-full",
-      ".max-w-screen-sm",
-      ".max-w-screen-md",
-      ".max-w-screen-lg",
-      ".max-w-screen-xl",
-      ".max-w-none"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/max-width"
+    "title": "Pointer Events",
+    "classes": [".pointer-events-none", ".pointer-events-auto"],
+    "documentationURL": "https://tailwindcss.com/docs/pointer-events"
+  },
+  {
+    "title": "Resize",
+    "classes": [".resize-none", ".resize", ".resize-y", ".resize-x"],
+    "documentationURL": "https://tailwindcss.com/docs/resize"
+  },
+  {
+    "title": "Position",
+    "classes": [".static", ".fixed", ".absolute", ".relative", ".sticky"],
+    "documentationURL": "https://tailwindcss.com/docs/position"
   },
   {
     "title": "Order",
@@ -1179,276 +1469,6 @@
     "documentationURL": "https://tailwindcss.com/docs/order"
   },
   {
-    "title": "Outline",
-    "classes": [".outline-none"],
-    "documentationURL": "https://tailwindcss.com/docs/outline"
-  },
-  {
-    "title": "Padding",
-    "classes": [
-      ".p-0",
-      ".p-1",
-      ".p-2",
-      ".p-3",
-      ".p-4",
-      ".p-5",
-      ".p-6",
-      ".p-8",
-      ".p-10",
-      ".p-12",
-      ".p-16",
-      ".p-20",
-      ".p-24",
-      ".p-32",
-      ".p-40",
-      ".p-48",
-      ".p-56",
-      ".p-64",
-      ".p-px",
-      ".py-0",
-      ".py-1",
-      ".py-2",
-      ".py-3",
-      ".py-4",
-      ".py-5",
-      ".py-6",
-      ".py-8",
-      ".py-10",
-      ".py-12",
-      ".py-16",
-      ".py-20",
-      ".py-24",
-      ".py-32",
-      ".py-40",
-      ".py-48",
-      ".py-56",
-      ".py-64",
-      ".py-px",
-      ".px-0",
-      ".px-1",
-      ".px-2",
-      ".px-3",
-      ".px-4",
-      ".px-5",
-      ".px-6",
-      ".px-8",
-      ".px-10",
-      ".px-12",
-      ".px-16",
-      ".px-20",
-      ".px-24",
-      ".px-32",
-      ".px-40",
-      ".px-48",
-      ".px-56",
-      ".px-64",
-      ".px-px",
-      ".pt-0",
-      ".pt-1",
-      ".pt-2",
-      ".pt-3",
-      ".pt-4",
-      ".pt-5",
-      ".pt-6",
-      ".pt-8",
-      ".pt-10",
-      ".pt-12",
-      ".pt-16",
-      ".pt-20",
-      ".pt-24",
-      ".pt-32",
-      ".pt-40",
-      ".pt-48",
-      ".pt-56",
-      ".pt-64",
-      ".pt-px",
-      ".pr-0",
-      ".pr-1",
-      ".pr-2",
-      ".pr-3",
-      ".pr-4",
-      ".pr-5",
-      ".pr-6",
-      ".pr-8",
-      ".pr-10",
-      ".pr-12",
-      ".pr-16",
-      ".pr-20",
-      ".pr-24",
-      ".pr-32",
-      ".pr-40",
-      ".pr-48",
-      ".pr-56",
-      ".pr-64",
-      ".pr-px",
-      ".pb-0",
-      ".pb-1",
-      ".pb-2",
-      ".pb-3",
-      ".pb-4",
-      ".pb-5",
-      ".pb-6",
-      ".pb-8",
-      ".pb-10",
-      ".pb-12",
-      ".pb-16",
-      ".pb-20",
-      ".pb-24",
-      ".pb-32",
-      ".pb-40",
-      ".pb-48",
-      ".pb-56",
-      ".pb-64",
-      ".pb-px",
-      ".pl-0",
-      ".pl-1",
-      ".pl-2",
-      ".pl-3",
-      ".pl-4",
-      ".pl-5",
-      ".pl-6",
-      ".pl-8",
-      ".pl-10",
-      ".pl-12",
-      ".pl-16",
-      ".pl-20",
-      ".pl-24",
-      ".pl-32",
-      ".pl-40",
-      ".pl-48",
-      ".pl-56",
-      ".pl-64",
-      ".pl-px"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/padding"
-  },
-  {
-    "title": "Placeholder Color",
-    "classes": [
-      ".placeholder-transparent::placeholder\n",
-      ".placeholder-current::placeholder\n",
-      ".placeholder-black::placeholder\n",
-      ".placeholder-white::placeholder\n",
-      ".placeholder-gray-100::placeholder\n",
-      ".placeholder-gray-200::placeholder\n",
-      ".placeholder-gray-300::placeholder\n",
-      ".placeholder-gray-400::placeholder\n",
-      ".placeholder-gray-500::placeholder\n",
-      ".placeholder-gray-600::placeholder\n",
-      ".placeholder-gray-700::placeholder\n",
-      ".placeholder-gray-800::placeholder\n",
-      ".placeholder-gray-900::placeholder\n",
-      ".placeholder-red-100::placeholder\n",
-      ".placeholder-red-200::placeholder\n",
-      ".placeholder-red-300::placeholder\n",
-      ".placeholder-red-400::placeholder\n",
-      ".placeholder-red-500::placeholder\n",
-      ".placeholder-red-600::placeholder\n",
-      ".placeholder-red-700::placeholder\n",
-      ".placeholder-red-800::placeholder\n",
-      ".placeholder-red-900::placeholder\n",
-      ".placeholder-orange-100::placeholder\n",
-      ".placeholder-orange-200::placeholder\n",
-      ".placeholder-orange-300::placeholder\n",
-      ".placeholder-orange-400::placeholder\n",
-      ".placeholder-orange-500::placeholder\n",
-      ".placeholder-orange-600::placeholder\n",
-      ".placeholder-orange-700::placeholder\n",
-      ".placeholder-orange-800::placeholder\n",
-      ".placeholder-orange-900::placeholder\n",
-      ".placeholder-yellow-100::placeholder\n",
-      ".placeholder-yellow-200::placeholder\n",
-      ".placeholder-yellow-300::placeholder\n",
-      ".placeholder-yellow-400::placeholder\n",
-      ".placeholder-yellow-500::placeholder\n",
-      ".placeholder-yellow-600::placeholder\n",
-      ".placeholder-yellow-700::placeholder\n",
-      ".placeholder-yellow-800::placeholder\n",
-      ".placeholder-yellow-900::placeholder\n",
-      ".placeholder-green-100::placeholder\n",
-      ".placeholder-green-200::placeholder\n",
-      ".placeholder-green-300::placeholder\n",
-      ".placeholder-green-400::placeholder\n",
-      ".placeholder-green-500::placeholder\n",
-      ".placeholder-green-600::placeholder\n",
-      ".placeholder-green-700::placeholder\n",
-      ".placeholder-green-800::placeholder\n",
-      ".placeholder-green-900::placeholder\n",
-      ".placeholder-teal-100::placeholder\n",
-      ".placeholder-teal-200::placeholder\n",
-      ".placeholder-teal-300::placeholder\n",
-      ".placeholder-teal-400::placeholder\n",
-      ".placeholder-teal-500::placeholder\n",
-      ".placeholder-teal-600::placeholder\n",
-      ".placeholder-teal-700::placeholder\n",
-      ".placeholder-teal-800::placeholder\n",
-      ".placeholder-teal-900::placeholder\n",
-      ".placeholder-blue-100::placeholder\n",
-      ".placeholder-blue-200::placeholder\n",
-      ".placeholder-blue-300::placeholder\n",
-      ".placeholder-blue-400::placeholder\n",
-      ".placeholder-blue-500::placeholder\n",
-      ".placeholder-blue-600::placeholder\n",
-      ".placeholder-blue-700::placeholder\n",
-      ".placeholder-blue-800::placeholder\n",
-      ".placeholder-blue-900::placeholder\n",
-      ".placeholder-indigo-100::placeholder\n",
-      ".placeholder-indigo-200::placeholder\n",
-      ".placeholder-indigo-300::placeholder\n",
-      ".placeholder-indigo-400::placeholder\n",
-      ".placeholder-indigo-500::placeholder\n",
-      ".placeholder-indigo-600::placeholder\n",
-      ".placeholder-indigo-700::placeholder\n",
-      ".placeholder-indigo-800::placeholder\n",
-      ".placeholder-indigo-900::placeholder\n",
-      ".placeholder-purple-100::placeholder\n",
-      ".placeholder-purple-200::placeholder\n",
-      ".placeholder-purple-300::placeholder\n",
-      ".placeholder-purple-400::placeholder\n",
-      ".placeholder-purple-500::placeholder\n",
-      ".placeholder-purple-600::placeholder\n",
-      ".placeholder-purple-700::placeholder\n",
-      ".placeholder-purple-800::placeholder\n",
-      ".placeholder-purple-900::placeholder\n",
-      ".placeholder-pink-100::placeholder\n",
-      ".placeholder-pink-200::placeholder\n",
-      ".placeholder-pink-300::placeholder\n",
-      ".placeholder-pink-400::placeholder\n",
-      ".placeholder-pink-500::placeholder\n",
-      ".placeholder-pink-600::placeholder\n",
-      ".placeholder-pink-700::placeholder\n",
-      ".placeholder-pink-800::placeholder\n",
-      ".placeholder-pink-900::placeholder\n"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/placeholder-color"
-  },
-  {
-    "title": "Placeholder Opacity",
-    "classes": [
-      ".placeholder-opacity-0",
-      ".placeholder-opacity-25",
-      ".placeholder-opacity-50",
-      ".placeholder-opacity-75",
-      ".placeholder-opacity-100"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/placeholder-opacity"
-  },
-  {
-    "title": "Position",
-    "classes": [".static", ".fixed", ".absolute", ".relative", ".sticky"],
-    "documentationURL": "https://tailwindcss.com/docs/position"
-  },
-  {
-    "title": "Pointer Events",
-    "classes": [".pointer-events-none", ".pointer-events-auto"],
-    "documentationURL": "https://tailwindcss.com/docs/pointer-events"
-  },
-  {
-    "title": "Resize",
-    "classes": [".resize-none", ".resize", ".resize-y", ".resize-x"],
-    "documentationURL": "https://tailwindcss.com/docs/resize"
-  },
-  {
     "title": "Rotate",
     "classes": [
       ".rotate-0",
@@ -1460,6 +1480,98 @@
       ".-rotate-45"
     ],
     "documentationURL": "https://tailwindcss.com/docs/rotate"
+  },
+  {
+    "title": "Space Between",
+    "classes": [
+      ".space-x-0",
+      ".space-x-1",
+      ".space-x-2",
+      ".space-x-3",
+      ".space-x-4",
+      ".space-x-5",
+      ".space-x-6",
+      ".space-x-8",
+      ".space-x-10",
+      ".space-x-12",
+      ".space-x-16",
+      ".space-x-20",
+      ".space-x-24",
+      ".space-x-32",
+      ".space-x-40",
+      ".space-x-48",
+      ".space-x-56",
+      ".space-x-64",
+      ".space-x-px",
+      ".-space-x-1",
+      ".-space-x-2",
+      ".-space-x-3",
+      ".-space-x-4",
+      ".-space-x-5",
+      ".-space-x-6",
+      ".-space-x-8",
+      ".-space-x-10",
+      ".-space-x-12",
+      ".-space-x-16",
+      ".-space-x-20",
+      ".-space-x-24",
+      ".-space-x-32",
+      ".-space-x-40",
+      ".-space-x-48",
+      ".-space-x-56",
+      ".-space-x-64",
+      ".-space-x-px",
+      ".space-y-0",
+      ".space-y-1",
+      ".space-y-2",
+      ".space-y-3",
+      ".space-y-4",
+      ".space-y-5",
+      ".space-y-6",
+      ".space-y-8",
+      ".space-y-10",
+      ".space-y-12",
+      ".space-y-16",
+      ".space-y-20",
+      ".space-y-24",
+      ".space-y-32",
+      ".space-y-40",
+      ".space-y-48",
+      ".space-y-56",
+      ".space-y-64",
+      ".space-y-px",
+      ".-space-y-1",
+      ".-space-y-2",
+      ".-space-y-3",
+      ".-space-y-4",
+      ".-space-y-5",
+      ".-space-y-6",
+      ".-space-y-8",
+      ".-space-y-10",
+      ".-space-y-12",
+      ".-space-y-16",
+      ".-space-y-20",
+      ".-space-y-24",
+      ".-space-y-32",
+      ".-space-y-40",
+      ".-space-y-48",
+      ".-space-y-56",
+      ".-space-y-64",
+      ".-space-y-px",
+      ".space-x-reverse",
+      ".space-y-reverse"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/space"
+  },
+  {
+    "title": "Screen readers",
+    "classes": [".sr-only", ".not-sr-only"],
+    "documentationURL": "https://tailwindcss.com/docs/screen-readers"
+  },
+  {
+    "title": "Stroke Width",
+    "classes": [".stroke-0", ".stroke-1", ".stroke-2"],
+    "documentationURL": "https://tailwindcss.com/docs/stroke-width"
   },
   {
     "title": "Scale",
@@ -1496,56 +1608,6 @@
       ".scale-y-150"
     ],
     "documentationURL": "https://tailwindcss.com/docs/scale"
-  },
-  {
-    "title": "Screen readers",
-    "classes": [".sr-only", ".not-sr-only"],
-    "documentationURL": "https://tailwindcss.com/docs/screen-readers"
-  },
-  {
-    "title": "Skew",
-    "classes": [
-      ".skew-x-0",
-      ".skew-x-3",
-      ".skew-x-6",
-      ".skew-x-12",
-      ".-skew-x-12",
-      ".-skew-x-6",
-      ".-skew-x-3",
-      ".skew-y-0",
-      ".skew-y-3",
-      ".skew-y-6",
-      ".skew-y-12",
-      ".-skew-y-12",
-      ".-skew-y-6",
-      ".-skew-y-3"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/skew"
-  },
-  {
-    "title": "Space Between",
-    "classes": [],
-    "documentationURL": "https://tailwindcss.com/docs/space"
-  },
-  {
-    "title": "Stroke Width",
-    "classes": [".stroke-0", ".stroke-1", ".stroke-2"],
-    "documentationURL": "https://tailwindcss.com/docs/stroke-width"
-  },
-  {
-    "title": "Object Position",
-    "classes": [
-      ".object-bottom",
-      ".object-center",
-      ".object-left",
-      ".object-left-bottom",
-      ".object-left-top",
-      ".object-right",
-      ".object-right-bottom",
-      ".object-right-top",
-      ".object-top"
-    ],
-    "documentationURL": "https://tailwindcss.com/docs/object-position"
   },
   {
     "title": "Stroke",
@@ -1663,6 +1725,16 @@
     "documentationURL": "https://tailwindcss.com/docs/text-color"
   },
   {
+    "title": "Text Decoration",
+    "classes": [".underline", ".line-through", ".no-underline"],
+    "documentationURL": "https://tailwindcss.com/docs/text-decoration"
+  },
+  {
+    "title": "Text Transform",
+    "classes": [".uppercase", ".lowercase", ".capitalize", ".normal-case"],
+    "documentationURL": "https://tailwindcss.com/docs/text-transform"
+  },
+  {
     "title": "Text Opacity",
     "classes": [
       ".text-opacity-0",
@@ -1672,16 +1744,6 @@
       ".text-opacity-100"
     ],
     "documentationURL": "https://tailwindcss.com/docs/text-opacity"
-  },
-  {
-    "title": "Text Transform",
-    "classes": [".uppercase", ".lowercase", ".capitalize", ".normal-case"],
-    "documentationURL": "https://tailwindcss.com/docs/text-transform"
-  },
-  {
-    "title": "Text Decoration",
-    "classes": [".underline", ".line-through", ".no-underline"],
-    "documentationURL": "https://tailwindcss.com/docs/text-decoration"
   },
   {
     "title": "Top / Right / Bottom / Left",
@@ -1719,6 +1781,26 @@
     "documentationURL": "https://tailwindcss.com/docs/transform-origin"
   },
   {
+    "title": "Skew",
+    "classes": [
+      ".skew-x-0",
+      ".skew-x-3",
+      ".skew-x-6",
+      ".skew-x-12",
+      ".-skew-x-12",
+      ".-skew-x-6",
+      ".-skew-x-3",
+      ".skew-y-0",
+      ".skew-y-3",
+      ".skew-y-6",
+      ".skew-y-12",
+      ".-skew-y-12",
+      ".-skew-y-6",
+      ".-skew-y-3"
+    ],
+    "documentationURL": "https://tailwindcss.com/docs/skew"
+  },
+  {
     "title": "Transition Delay",
     "classes": [
       ".delay-75",
@@ -1745,11 +1827,6 @@
       ".duration-1000"
     ],
     "documentationURL": "https://tailwindcss.com/docs/transition-duration"
-  },
-  {
-    "title": "Transition Timing Function",
-    "classes": [".ease-linear", ".ease-in", ".ease-out", ".ease-in-out"],
-    "documentationURL": "https://tailwindcss.com/docs/transition-timing-function"
   },
   {
     "title": "Transition Property",
@@ -1853,9 +1930,9 @@
     "documentationURL": "https://tailwindcss.com/docs/translate"
   },
   {
-    "title": "User Select",
-    "classes": [".select-none", ".select-text", ".select-all", ".select-auto"],
-    "documentationURL": "https://tailwindcss.com/docs/user-select"
+    "title": "Transition Timing Function",
+    "classes": [".ease-linear", ".ease-in", ".ease-out", ".ease-in-out"],
+    "documentationURL": "https://tailwindcss.com/docs/transition-timing-function"
   },
   {
     "title": "Vertical Alignment",
@@ -1875,6 +1952,11 @@
     "documentationURL": "https://tailwindcss.com/docs/visibility"
   },
   {
+    "title": "User Select",
+    "classes": [".select-none", ".select-text", ".select-all", ".select-auto"],
+    "documentationURL": "https://tailwindcss.com/docs/user-select"
+  },
+  {
     "title": "Whitespace",
     "classes": [
       ".whitespace-normal",
@@ -1884,6 +1966,11 @@
       ".whitespace-pre-wrap"
     ],
     "documentationURL": "https://tailwindcss.com/docs/whitespace"
+  },
+  {
+    "title": "Word Break",
+    "classes": [".break-normal", ".break-words", ".break-all", ".truncate"],
+    "documentationURL": "https://tailwindcss.com/docs/word-break"
   },
   {
     "title": "Width",
@@ -1943,15 +2030,5 @@
     "title": "Z-Index",
     "classes": [".z-0", ".z-10", ".z-20", ".z-30", ".z-40", ".z-50", ".z-auto"],
     "documentationURL": "https://tailwindcss.com/docs/z-index"
-  },
-  {
-    "title": "Max-Height",
-    "classes": [".max-h-full", ".max-h-screen"],
-    "documentationURL": "https://tailwindcss.com/docs/max-height"
-  },
-  {
-    "title": "Word Break",
-    "classes": [".break-normal", ".break-words", ".break-all", ".truncate"],
-    "documentationURL": "https://tailwindcss.com/docs/word-break"
   }
 ]

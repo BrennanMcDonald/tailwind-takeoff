@@ -6,6 +6,7 @@
       "jsx": true
     }
   },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "semi": "error"
   },
@@ -13,5 +14,6 @@
     "browser": true,
     "node": true
   },
+  "plugins": ["jest"],
   "ignorePatterns": ["build/*", "metadata/*", "scripts/*", "config/*"]
 }
