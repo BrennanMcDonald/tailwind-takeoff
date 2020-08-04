@@ -1,4 +1,3 @@
-/* eslint import/no-webpack-loader-syntax: off */
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import metadata from "./metadata.json";
@@ -6,7 +5,7 @@ import MetadataDrawer from "./components/MetadataDrawer";
 import "semantic-ui-css/semantic.min.css";
 import { Container, TextArea } from "semantic-ui-react";
 import root from "react-shadow";
-import css from "!!raw-loader!./tailwind.txt";
+import css from "./tailwind.txt";
 
 function App() {
   const classes = useSelector((state) => state.classes.classes);
