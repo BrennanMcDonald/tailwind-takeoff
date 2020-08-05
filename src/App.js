@@ -21,7 +21,6 @@ function App() {
 
   useEffect(() => {
     dispatch(updateHTML(element.current));
-    console.log(documentHTML);
   });
 
   return (
