@@ -18,14 +18,12 @@ const MetadataOption = (props) => {
 
   const onChange = (e) => {
     if (e.target.textContent) {
-      console.log("ADD: " + e.target.textContent);
       dispatch(
         addClass({
           class: e.target.textContent,
         })
       );
     } else {
-      console.log("DELETE: " + e.target.parentElement.textContent);
       dispatch(
         removeClass({
           class: e.target.parentElement.textContent,
@@ -33,7 +31,7 @@ const MetadataOption = (props) => {
       );
     }
   };
-  
+
   return (
     <>
       <Grid>

@@ -1,22 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateHTML } from "./redux/documentSlice";
-
-import root from "react-shadow";
-
 import MetadataDrawer from "./components/MetadataDrawer";
-
 import "semantic-ui-css/semantic.min.css";
-import { TextArea } from "semantic-ui-react";
-
-import css from "./tailwind.txt";
+import { TextArea, Input } from "semantic-ui-react";
 import metadata from "./metadata.json";
+import ShadowDom from "./components/ShadowDom";
 
 function App() {
   const dispatch = useDispatch();
   const classes = useSelector((state) => state.classes.classes);
   const documentHTML = useSelector((state) => state.document.html);
   const [innerHTML, setInnerHTML] = useState("Content");
+  const [elementType, setElementType] = useState("div");
   const element = useRef();
 
   useEffect(() => {
@@ -30,16 +26,12 @@ function App() {
       </div>
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
         <div style={{ flex: 1, padding:"10px" }}>
-          <root.div style={{height:"100%"}}>
-            <div
-              ref={element}
-              dangerouslySetInnerHTML={{ __html: innerHTML }}
-              className={classes.map((el) => el.replace(".", "")).join(" ")}
-            ></div>
-            <style type="text/css">{css}</style>
-          </root.div>
+          <ShadowDom ref={element} elementType={elementType} classes={classes} content={innerHTML} />
         </div>
         <div style={{ flex: 1, display: "flex" }}>
+          <div>
+            <Input value={elementType} onChange={(e) => setElementType(e.target.value)} />
+          </div>
           <TextArea
             autocapitalize="off"
             spellcheck="off"
