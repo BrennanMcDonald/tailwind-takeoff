@@ -25,12 +25,20 @@ function App() {
         <MetadataDrawer options={metadata} />
       </div>
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <div style={{ flex: 1, padding:"10px" }}>
-          <ShadowDom ref={element} elementType={elementType} classes={classes} content={innerHTML} />
+        <div style={{ flex: 1, padding: "10px" }}>
+          <ShadowDom
+            ref={element}
+            elementType={elementType}
+            classes={classes}
+            content={innerHTML}
+          />
         </div>
         <div style={{ flex: 1, display: "flex" }}>
           <div>
-            <Input value={elementType} onChange={(e) => setElementType(e.target.value)} />
+            <Input
+              value={elementType}
+              onChange={(e) => setElementType(e.target.value)}
+            />
           </div>
           <TextArea
             autocapitalize="off"

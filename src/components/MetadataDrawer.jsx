@@ -20,19 +20,22 @@ const MetadataDrawer = (props) => {
   const [search, setSearch] = useState("");
 
   const onChange = (e) => {
-    if (e.target.parentElement.parentElement.dataset['option'] === 'media-query') {
+    if (
+      e.target.parentElement.parentElement.dataset["option"] === "media-query"
+    ) {
       dispatch(
         setMediaQuery({
           mediaQuery: e.target.textContent,
         })
       );
-    } else if(e.target.parentElement.parentElement.dataset['option'] === 'pseudo-class') {
+    } else if (
+      e.target.parentElement.parentElement.dataset["option"] === "pseudo-class"
+    ) {
       dispatch(
         setPseudoClass({
           pseudoClass: e.target.textContent,
         })
       );
-
     }
   };
 
@@ -43,24 +46,25 @@ const MetadataDrawer = (props) => {
         height: "100%",
         display: "flex",
         flexDirection: "column",
+        borderRight: "solid 1px #d3d3d3",
+        padding: "10px",
       }}
     >
-      <div>
-      </div>
+      <div></div>
       <input
         placeholder="Search..."
         style={{
           width: "100%",
           borderRadius: "0px",
           border: "solid 1px #e3e3e3",
-          padding: "10px 5px"
+          padding: "10px 5px",
         }}
         value={search}
         onChange={(el) => setSearch(el.target.value)}
       />
       <Space height={10} />
       <Grid columns={2}>
-        <Grid.Column >
+        <Grid.Column>
           <Dropdown
             placeholder="Media Queries"
             data-option="media-query"
@@ -68,7 +72,8 @@ const MetadataDrawer = (props) => {
             fluid
             value={mediaQuery}
             onChange={onChange}
-            options={['','xs', 'sm', 'md', 'lg'].map(format)} />
+            options={["", "xs", "sm", "md", "lg"].map(format)}
+          />
         </Grid.Column>
         <Grid.Column>
           <Dropdown
@@ -78,7 +83,8 @@ const MetadataDrawer = (props) => {
             fluid
             value={pseudoClass}
             onChange={onChange}
-            options={['','hover', 'active', 'focus'].map(format)} />
+            options={["", "hover", "active", "focus"].map(format)}
+          />
         </Grid.Column>
       </Grid>
       <Space height={10} />
@@ -93,7 +99,8 @@ const MetadataDrawer = (props) => {
           .filter((el) => {
             return (
               el.title.toLowerCase().includes(search.toLowerCase()) ||
-              el.classes.filter(el => el.includes(search.toLowerCase())).length > 0
+              el.classes.filter((el) => el.includes(search.toLowerCase()))
+                .length > 0
             );
           })
           .map((el) => {
