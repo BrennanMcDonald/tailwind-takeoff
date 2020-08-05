@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Input } from "semantic-ui-react";
 import MetadataOption from "./MetadataOption";
 
 const MetadataDrawer = (props) => {
@@ -15,9 +14,14 @@ const MetadataDrawer = (props) => {
         flexDirection: "column",
       }}
     >
-      <Input
+      <input
         placeholder="Search..."
-        style={{ width: "100%" }}
+        style={{ 
+          width: "100%", 
+          borderRadius: "0px",
+          border: "solid 1px #e3e3e3",
+          padding: "10px 5px"
+        }}
         value={search}
         onChange={(el) => setSearch(el.target.value)}
       />
@@ -29,7 +33,12 @@ const MetadataDrawer = (props) => {
         }}
       >
         {props.options
-          .filter((el) => el.title.toLowerCase().includes(search.toLowerCase()))
+          .filter((el) => {
+            return (
+              el.title.toLowerCase().includes(search.toLowerCase()) ||
+              el.classes.filter(el => el.includes(search.toLowerCase())).length > 0
+            );
+          })
           .map((el) => {
             return <MetadataOption key={el.title} option={el} />;
           })}
